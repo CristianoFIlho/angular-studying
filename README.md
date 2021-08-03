@@ -1,2 +1,2 @@
 # angular-studying
-course angula.JS 
+course angular
