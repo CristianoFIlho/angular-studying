@@ -14,7 +14,7 @@ export class ComponentList implements OnInit {
             {
                 id: 1,
                 name: 'Angular',
-                imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+                imageUrl: '../../assets/images/animations.png',
                 
                 price: 100,
                 code: '123-weq',
@@ -25,7 +25,7 @@ export class ComponentList implements OnInit {
             {
                 id: 2,
                 name: 'React',
-                imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+                imageUrl: '../../assets/images/cli.png',
 
                 price: 1001,
                 code: '123-wet',
@@ -36,7 +36,7 @@ export class ComponentList implements OnInit {
             {
                 id: 3,
                 name: 'Vue',
-                imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+                imageUrl: '../../assets/images/forms.png',
                 price: 101,
                 code: '123-wea',
                 duration: 2200,

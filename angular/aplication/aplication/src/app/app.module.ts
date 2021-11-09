@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentList } from './components/componentlist';
+import { StarComponent } from './star/star.componet';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ComponentList } from './components/componentlist';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    StarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
