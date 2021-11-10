@@ -10,9 +10,19 @@ import { CourseService } from './course.service';
 export class ComponentList implements OnInit {
     courses: Course[] = [];
 
+    _filterBy: string; 
+
     constructor(private courseService: CourseService) { }
     
     ngOnInit(): void {
         this.courses = this.courseService.retrieveAll();
+    }
+
+    set filter(value: string) {
+        this._filterBy = value;
+    }
+
+    get filter() {
+        return this._filterBy;
     }
 }
