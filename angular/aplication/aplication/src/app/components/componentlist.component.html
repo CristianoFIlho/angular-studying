@@ -5,7 +5,7 @@
 <label class="col-sm-2-from-label">Filter By</label>
 
 <div class="col-sm-20">
-  <input class="form-control">
+  <input [(ngModel)]="filter" class="form-control">
 
 </div>
 
@@ -23,7 +23,7 @@
   </thead>
 
   <tbody>
-    <tr *ngFor="let course of courses">
+    <tr *ngFor="let course of filteredCourses">
       <td> <img [src]="course.imageUrl" width="40px"></td>
       <td>{{course.name}}</td>
       <td>{{course.price}}</td>
