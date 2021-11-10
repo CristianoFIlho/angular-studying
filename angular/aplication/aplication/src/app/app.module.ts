@@ -10,12 +10,13 @@ import { StarComponent } from './star/star.componet';
   declarations: [
     AppComponent,
     ComponentList,
+    StarComponent
 
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    StarComponent
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

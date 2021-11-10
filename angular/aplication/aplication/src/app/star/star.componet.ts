@@ -1,5 +1,7 @@
-import { Input, OnChanges, SimpleChanges } from "@angular/core";
-import { Component } from "@angular/core";
+
+import {Component ,Input, OnChanges} from "@angular/core";
+import { NgModel } from "@angular/forms";
+
 
 
 @Component({
@@ -8,12 +10,19 @@ import { Component } from "@angular/core";
    
 })
 
+
+
+
+ 
 export class StarComponent implements OnChanges{
 
     @Input() 
     rating: number = 0;
     starWidth: number | undefined;
+    
+    
+    
     ngOnChanges(): void {
             this.starWidth = this.rating * 94 / 5;
-            }
+            } 
 }
