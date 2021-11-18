@@ -8,13 +8,15 @@ import { StarComponent } from './star/star.componet';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './navbar/nav-bar.component';
 import { RouterModule } from '@angular/router';
+import { Error404Component } from './404/error-404.component';
 @NgModule({
   declarations: [
     AppComponent,
     ComponentList,
     StarComponent, 
     ReplacePipe,
-    NavBarComponent
+    NavBarComponent,
+    Error404Component
 
   ],
   imports: [
@@ -26,6 +28,9 @@ import { RouterModule } from '@angular/router';
       },
       {
           path: 'courses', component: ComponentList 
+      },
+      {
+        path: '**', component: Error404Component
       }
     ])
     
