@@ -7,7 +7,7 @@ import { ComponentList } from './components/componentlist';
 import { StarComponent } from './star/star.componet';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './navbar/nav-bar.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,15 @@ import { NavBarComponent } from './navbar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule, 
+    RouterModule.forRoot([
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full'
+      },
+      {
+          path: 'courses', component: ComponentList 
+      }
+    ])
     
   ],
   providers: [],
