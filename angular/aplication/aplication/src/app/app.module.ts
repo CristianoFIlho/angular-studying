@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { ComponentList } from './components/componentlist';
 import { StarComponent } from './star/star.componet';
 import { ReplacePipe } from './pipe/replace.pipe';
+import { NavBarComponent } from './navbar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentList,
     StarComponent, 
-    ReplacePipe
+    ReplacePipe,
+    NavBarComponent
 
   ],
   imports: [
