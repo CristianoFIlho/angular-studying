@@ -16,9 +16,9 @@
       <th>Name</th>
       <th>Price</th>
       <th>Code</th>
-      <th>Options</th>
       <th>Release Date</th>
       <th>Rating</th>
+      <th>Options</th>
 
     </tr>
   </thead>
@@ -28,11 +28,12 @@
       <td> <img [src]="course.imageUrl" width="40px"></td>
       <td>{{course.name}}</td>
       <td>{{course.price}}</td>
-      <td>{{course.code | lowercase}}</td>d
+      <td>{{course.code | lowercase}}</td>
       <td>{{course.releaseDate | date: 'dd/MM/yyyy'}}</td>
       <td>
         <app-star [rating]="course.rating"></app-star>
       </td>
+      <a [routerLink]="['./info', course.id]" class="btn btn-primary">Edit</a>
     </tr>
   </tbody>
 </table>
