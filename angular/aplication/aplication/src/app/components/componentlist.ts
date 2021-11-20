@@ -25,6 +25,7 @@ export class ComponentList implements OnInit {
         this.filteredCourses = this.courses.filter((course: Course) => course.name.toLocaleLowerCase().indexOf(this.filter.toLocaleLowerCase()) > -1);
     }
 
+    
     get filter() {
         return this._filterBy;
     }
